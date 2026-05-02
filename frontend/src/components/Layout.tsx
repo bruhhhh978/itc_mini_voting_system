@@ -6,6 +6,8 @@ const navItems = [
   { to: '/vote', label: 'Vote' },
   { to: '/results', label: 'Results' },
   { to: '/admin', label: 'Admin' },
+  { to: '/poc/tasks', label: 'POC Tasks' },
+  { to: '/poc/profile', label: 'POC Profile' },
 ] as const;
 
 export default function Layout() {
@@ -15,8 +17,8 @@ export default function Layout() {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
           <div className="flex items-center gap-4">
             <div className="leading-tight">
-              <div className="text-sm font-semibold tracking-wide text-white">Mini Voting</div>
-              <div className="text-xs text-slate-400">Web3-ready UI (Sui Wallet)</div>
+              <div className="text-sm font-semibold tracking-wide text-white">Mini Voting + POC</div>
+              <div className="text-xs text-slate-400">Mock voting + on-chain Proof of Contribution</div>
             </div>
 
             <nav className="hidden items-center gap-1 sm:flex">
